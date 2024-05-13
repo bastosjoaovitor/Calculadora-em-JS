@@ -8,6 +8,7 @@
 html, body {
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 }
 
 body {
@@ -27,7 +28,7 @@ h1 {
 #calculator {
     height: 77vh;
     width: 77vw;
-    max-width: 100vh;
+    max-width: 60vh;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 20px;
     padding: 3vw;
@@ -70,9 +71,18 @@ h1 {
     font-size: 3em;
     border-radius: 0.2em;
     width: 0%;
+    transition: 0.1s;
+}
+
+.button:hover {
+    background-color: rgba(187, 255, 0, 0.9);
+    color: black;
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 footer {
+    padding: 10px 0px 10px 0px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     text-align: center;
