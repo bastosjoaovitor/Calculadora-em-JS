@@ -11,41 +11,42 @@
     <h1>Calculator</h1>
     <main id="calculator">
         <div id="response">
-            <p>Teste</p>
+            <p id="response-text">Teste</p>
         </div>
         <table id="buttons">
             <tr>
-                <td class="button">C</td>
-                <td class="button">&radic;</td>
-                <td class="button">&divide;</td>
-                <td class="button">&times;</td>
+                <td class="button" onclick="clean()">C</td>
+                <td class="button" onclick="insert('&radic;')">&radic;</td>
+                <td class="button" onclick="insert('&divide;')">&divide;</td>
+                <td class="button" onclick="insert('&times;')">&times;</td>
             </tr>
             <tr>
-                <td class="button">7</td>
-                <td class="button">8</td>
-                <td class="button">9</td>
-                <td class="button">-</td>
+                <td class="button" onclick="insert('7')">7</td>
+                <td class="button" onclick="insert('8')">8</td>
+                <td class="button" onclick="insert('9')">9</td>
+                <td class="button" onclick="insert('-')">-</td>
             </tr>
             <tr>
-                <td class="button">4</td>
-                <td class="button">5</td>
-                <td class="button">6</td>
-                <td class="button">+</td>
+                <td class="button" onclick="insert('4')">4</td>
+                <td class="button" onclick="insert('5')">5</td>
+                <td class="button" onclick="insert('6')">6</td>
+                <td class="button" onclick="insert('+')">+</td>
             </tr>
             <tr>
-                <td class="button">1</td>
-                <td class="button">2</td>
-                <td class="button">3</td>
+                <td class="button" onclick="insert('1')">1</td>
+                <td class="button" onclick="insert('2')">2</td>
+                <td class="button" onclick="insert('3')">3</td>
                 <td rowspan="2" class="button">=</td>
             </tr>
             <tr>
-                <td colspan="2" class="button">0</td>
-                <td class="button">.</td>
+                <td colspan="2" class="button" onclick="insert('0')">0</td>
+                <td class="button" onclick="insert('.')">.</td>
             </tr>
         </table>
     </main>
     <footer>
         <p>&copy;Created by João Vitor Bastos</p>
     </footer>
+    <script src="../Scripts/script.js"></script>
 </body>
 </html>
