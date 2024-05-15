@@ -82,6 +82,10 @@ h1 {
     cursor: pointer;
 }
 
+.button:active {
+    background-color: rgba(100, 136, 0, 0.9);
+}
+
 footer {
     padding: 10px 0px 10px 0px;
     width: 100%;
