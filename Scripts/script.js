@@ -21,12 +21,20 @@ function clean() {
 function calculate() {
     var response = document.getElementById("response-text");
     var expression = response.innerText;
+    var expression = validate_calculation(expression)
     var result;
 
     try {
         result = eval(expression);
         response.innerText = result;
     } catch (error) {
-        
+
     }
+}
+
+function validate_calculation(calc) {
+    var calculo = calc.replace(/\^/g, '**');
+    calculo = calculo.replace(/÷/g, '/');
+    calculo = calculo.replace(/×/g, '*');
+    return calculo;
 }

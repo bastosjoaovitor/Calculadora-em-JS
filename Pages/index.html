@@ -16,7 +16,7 @@
         <table id="buttons">
             <tr>
                 <td class="button" onclick="clean()">C</td>
-                <td class="button" onclick="insert_sinal('&radic;')">&radic;</td>
+                <td class="button" onclick="insert_sinal('^')">^</td>
                 <td class="button" onclick="insert_sinal('&divide;')">&divide;</td>
                 <td class="button" onclick="insert_sinal('&times;')">&times;</td>
             </tr>
@@ -36,7 +36,7 @@
                 <td class="button" onclick="insert_number('1')">1</td>
                 <td class="button" onclick="insert_number('2')">2</td>
                 <td class="button" onclick="insert_number('3')">3</td>
-                <td rowspan="2" class="button" onclick="calculate()">=</td>
+                <td rowspan="2" class="button" id="calculate" onclick="calculate()">=</td>
             </tr>
             <tr>
                 <td colspan="2" class="button" onclick="insert_number('0')">0</td>
