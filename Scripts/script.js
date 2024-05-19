@@ -57,7 +57,7 @@ function calculate() {
     var result;
     try {
         result = eval(expression);
-        response.innerText = result;
+        response.innerText = formatResult(result);
     } catch (error) {
 
     }
@@ -68,4 +68,12 @@ function validate_calculation(calc) {
     calculo = calculo.replace(/÷/g, '/');
     calculo = calculo.replace(/×/g, '*');
     return calculo;
+}
+
+function formatResult(result) {
+    var resultString = result.toString();
+    if (resultString.length > 12) {
+        resultString = result.toExponential(6);
+    }
+    return resultString
 }
