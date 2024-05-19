@@ -3,7 +3,7 @@ function insert_number(num) {
     var parts = response.innerText.split(/[\^÷×\-+]/);
     var lastPart = parts[parts.length - 1];
     if (num == 0) {
-        if (response.innerText.length == 0 || lastPart.slice(-1) !== '0' || lastPart.includes('.')) {
+        if (response.innerText.length == 0 || lastPart.includes('.') || lastPart.slice(-1) !== '0' ||(lastPart.slice(-1) == '0' && lastPart.length > 1)) {
             response.innerText += '0';
         }
     } else {
@@ -36,18 +36,14 @@ function insert_ponto() {
     var lastPart = parts[parts.length - 1];
     if (lastPart == '') {
         response.innerText += '0.';
-    } else if (!response.innerText.includes('.')) {
-        response.innerText += '.';
-    }
-
-    if (!response.innerText.includes('.')) {
+    } else if (!lastPart.includes('.')) {
         response.innerText += '.';
     }
 }
 
 function clean() {
     var response = document.getElementById('response-text');
-    response.innerText = '';
+    response.innerText = '0';
 }
 
 function calculate() {
