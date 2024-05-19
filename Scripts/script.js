@@ -18,7 +18,8 @@ function insert_number(num) {
 
 function insert_sinal(sinal) {
     var response = document.getElementById("response-text");
-    if (sinal == '-' && response.innerText.length == 0) {
+    if (sinal == '-' && response.innerText.slice(-1) == '0') {
+        response.innerText = response.innerText.slice(0, -1)
         response.innerText += '-';
     } else if (response.innerText.length > 0) {
         if (['^', '÷', '×', '-', '+'].includes(response.innerText.slice(-1))) {
@@ -55,7 +56,7 @@ function calculate() {
         result = eval(expression);
         response.innerText = formatResult(result);
     } catch (error) {
-
+        response.innerText = 'Error';
     }
 }
 
