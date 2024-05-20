@@ -18,7 +18,7 @@ Este é um projeto de calculadora online criado por João Vitor Bastos. A calcul
   - **Display da Calculadora**: Estiliza a área onde os resultados são exibidos, garantindo boa visibilidade.
 
 ### JavaScript
-- **Funcionalidade da Calculadora**: O JavaScript é usado para adicionar interatividade e   funcionalidade à calculadora.
+- **Funcionalidade da Calculadora**: O JavaScript é usado para adicionar interatividade e funcionalidade à calculadora.
   - **Inserção de Números e Sinais**: Funções para inserir números e operadores matemáticos no display.
   - **Cálculo**: Função para calcular a expressão matemática inserida e mostrar o resultado.
   - **Validação e Formatação**: Funções para validar a expressão e formatar o resultado para exibição adequada.
