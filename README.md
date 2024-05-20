@@ -4,13 +4,12 @@ This is an online calculator project created by João Vitor Bastos. The calculat
 
 ## Other Languages
 
-- [Versão em Português](README_pt-br.md)
+- [Versão em Português](README_pt-BR.md)
 
 ## Technologies Used
 
 ### HTML
 - **Content Structuring**: HTML is used to create the basic structure of the calculator, including the buttons and the display area for results.
-- **Doctype and Metatags**: Defines the document type and includes metatags for support across different languages and devices.
 
 ### CSS
 - **Interface Styling**: CSS is used to style the elements of the page, such as the background, buttons, and the calculator display.
