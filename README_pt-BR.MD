@@ -4,7 +4,7 @@ Este é um projeto de calculadora online criado por João Vitor Bastos. A calcul
 
 ## Other Languages
 
-- [Versão em Inglês](./README.md)
+- [Versão em Inglês](README.md)
 
 ## Tecnologias Utilizadas
 

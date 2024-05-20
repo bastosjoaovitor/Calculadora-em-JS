@@ -4,7 +4,7 @@ This is an online calculator project created by João Vitor Bastos. The calculat
 
 ## Other Languages
 
-- [Versão em Português](./README_pt-br.md)
+- [Versão em Português](README_pt-br.md)
 
 ## Technologies Used
 
